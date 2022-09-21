@@ -6,7 +6,9 @@ public class IncrementarValor : MonoBehaviour
 {
     public void incremento(){
         Debug.Log(GameObject.Find("Save State Button"));
-        GameDataManager refScript = GetComponent<GameDataManager>();
+        Debug.Log(GameObject.Find("LoadGame"));
+        GameObject lgComponent = GameObject.Find("LoadGame");
+        GameDataManager refScript = lgComponent.GetComponent<GameDataManager>();
         refScript.gameData.valor++;
     }
 }
