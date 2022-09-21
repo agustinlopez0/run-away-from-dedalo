@@ -28,6 +28,8 @@ public class GameDataManager : MonoBehaviour
     public void readFile()
     {
         // Does the file exist?
+        Debug.Log("hohoho");
+        Debug.Log(saveFile);
         if (File.Exists(saveFile))
         {
             // Create FileStream for opening files.
@@ -60,6 +62,7 @@ public class GameDataManager : MonoBehaviour
             //  into a pattern matching the GameData class.
             gameData = JsonUtility.FromJson<GameData>(text);
         }
+        //Debug.Log(gameData.valor);
     }
 
     public void writeFile()

@@ -1991,6 +1991,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 144226924}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: startGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1723979270}
         m_TargetAssemblyTypeName: GameDataManager, Assembly-CSharp
         m_MethodName: readFile
@@ -2214,7 +2226,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5498c31ca7813d41b01cc025b0fa015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameData: {fileID: 0}
+  gameData:
+    sceneName: SampleScene
+    valor: 0
 --- !u!4 &1723979271
 Transform:
   m_ObjectHideFlags: 0

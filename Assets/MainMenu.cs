@@ -11,6 +11,11 @@ public class MainMenu : MonoBehaviour
         //Debug.Log(GameObject.Find("GameDataObject"));
     }
 
+    public void continueGame(){
+        SceneManager.LoadScene("SampleScene");
+        
+    }
+
     public void quitGame(){
         Debug.Log("Quit");
         Application.Quit();

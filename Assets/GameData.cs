@@ -7,7 +7,7 @@ public class GameData/* : MonoBehaviour*/
 {
     // Start is called before the first frame update
     public string sceneName;
-    public/* static*/ int valor=0;
+    public/* static*/ int valor;
 
     public void setSceneName(string level){
         sceneName = level;
