@@ -5,6 +5,7 @@ using UnityEngine;
 public class IncrementarValor : MonoBehaviour
 {
     public void incremento(){
+        Debug.Log("hola");
         Debug.Log(GameObject.Find("Save State Button"));
         Debug.Log(GameObject.Find("LoadGame"));
         GameObject lgComponent = GameObject.Find("LoadGame");
