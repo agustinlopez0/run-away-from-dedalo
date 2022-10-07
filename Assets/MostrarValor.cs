@@ -19,8 +19,8 @@ public class MostrarValor : MonoBehaviour
     {   
         GameObject lgComponent = GameObject.Find("LoadGame");
         GameDataManager refScript = lgComponent.GetComponent<GameDataManager>();
-        Debug.Log("Valor: "+ refScript.gameData.valor);
-        display.SetText("Valor: "+ refScript.gameData.valor);
+        //Debug.Log("Valor: "+ refScript.gameData.valor);
+        display.SetText("Puntos: "+ refScript.gameData.valor);
         //display.text = "Valor: "+ refScript.gameData.valor;
     }
 }
