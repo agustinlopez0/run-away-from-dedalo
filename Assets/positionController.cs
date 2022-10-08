@@ -18,7 +18,6 @@ public class positionController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        Debug.Log(gameObject.transform.position);
         if(gameObject.transform.position.y < topButton.transform.position.y){
             gameObject.GetComponent <ConstantForce > ().force = new Vector3(0,15,0);
         }else{
@@ -30,11 +29,10 @@ public class positionController : MonoBehaviour
             isActivated = true;
         }else{
             isActivated = false;
-            Debug.Log("hola!!");
         }
 
         //cambiar
-        gameObject.transform.position = new Vector3(-7.4f, gameObject.transform.position.y, -19.6f);
+        //gameObject.transform.position = new Vector3(-7.4f, gameObject.transform.position.y, -19.6f);
     }
     //gameObject.GetComponent <ConstantForce > ().force = new Vector3(0,20,0);
 }
