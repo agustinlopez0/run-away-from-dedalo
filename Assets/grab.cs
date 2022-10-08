@@ -8,14 +8,14 @@ public class grab : MonoBehaviour
     public GameObject pickedObject = null;
     
     void Update(){
-        /*if(pickedObject!=null){
-            if(Input.GetKeyDown(KeyCode.LeftControl)){
+        if(pickedObject!=null){
+            if(Input.GetKey("r")){
                 pickedObject.GetComponent<Rigidbody>().useGravity = true;
                 pickedObject.GetComponent<Rigidbody>().isKinematic = false;
                 pickedObject.gameObject.transform.SetParent(null);
                 pickedObject = null;
             }
-        }*/
+        }
     }
 
     // Update is called once per frame
