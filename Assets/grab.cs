@@ -25,6 +25,7 @@ public class grab : MonoBehaviour
             if(Input.GetKey("e") && pickedObject==null){
                 other.GetComponent<Rigidbody>().useGravity = false;
                 other.GetComponent<Rigidbody>().isKinematic = true;
+                other.transform.LookAt(this.transform.forward); //works?
                 other.transform.position = handPoint.transform.position;
                 other.gameObject.transform.SetParent(handPoint.gameObject.transform);
                 pickedObject = other.gameObject;
