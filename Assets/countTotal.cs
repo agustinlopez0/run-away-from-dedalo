@@ -10,7 +10,7 @@ public class countTotal : MonoBehaviour
     {
         GameObject lgComponent = GameObject.Find("LoadGame");
         GameDataManager refScript = lgComponent.GetComponent<GameDataManager>();
-        if(refScript.gameData.valor==5){
+        if(refScript.gameData.valor==31){
             endGame.SetActive(true);
         }
     }
