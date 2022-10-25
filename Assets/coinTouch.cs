@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class coinTouch : MonoBehaviour
 {
+    public GameObject light;
 
     private int getIndex(){
         string str = gameObject.transform.parent.name;
@@ -29,6 +30,8 @@ public class coinTouch : MonoBehaviour
 
             Debug.Log(refScript.gameData.valor);
 
+
+            Destroy(light);
             Destroy(gameObject);
         }
     }
