@@ -17,8 +17,10 @@ public class AppearIf : MonoBehaviour
     {
         if(presionado.isActivated == true){
             gameObject.GetComponent<Renderer>().enabled = false;
+            gameObject.transform.parent.GetComponent<Collider>().enabled=false;
         }else{
             gameObject.GetComponent<Renderer>().enabled = true;
+            gameObject.transform.parent.GetComponent<Collider>().enabled=true;
         }
     }
 }
