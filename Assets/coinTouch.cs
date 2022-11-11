@@ -20,8 +20,8 @@ public class coinTouch : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collider){
-        // if(collider.gameObject.tag=="Player"){
+    void OnTriggerEnter(Collider collider){
+        if(collider.gameObject.tag == "Player"){
             Debug.Log("rabasedas xd");
 
             //increases score
@@ -35,6 +35,6 @@ public class coinTouch : MonoBehaviour
 
             Destroy(light);
             Destroy(gameObject);
-        // }
+        }
     }
 }
