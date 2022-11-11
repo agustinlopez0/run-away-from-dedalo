@@ -5,6 +5,7 @@ using UnityEngine;
 public class endLevel : MonoBehaviour
 {
     public int maxScore = 5;
+    public GameObject ligth;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class endLevel : MonoBehaviour
         if(refScript.gameData.valor == maxScore){
             gameObject.GetComponent<Renderer>().enabled = false;
             gameObject.transform.parent.GetComponent<Collider>().enabled=false;
-
+            ligth.SetActive(true);
         }
     }
 }

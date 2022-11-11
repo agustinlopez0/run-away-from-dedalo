@@ -5,7 +5,7 @@ using UnityEngine;
 public class hideWall : MonoBehaviour
 {
 
-    public MeshRendered pared;
+    public MeshRenderer pared;
 
 
     // Start is called before the first frame update
@@ -21,11 +21,15 @@ public class hideWall : MonoBehaviour
     }
 
     void OnTriggerEnter (Collider collider){
-        pared.enabled = false;
+        if(collider.gameObject.tag == "Player"){
+            pared.enabled = false;
+        }
     }
     
     void OnTriggerExit (Collider collider){
-        pared.enabled = true;
+        if(collider.gameObject.tag == "Player"){
+            pared.enabled = true;
+        }
     }
 
 }
