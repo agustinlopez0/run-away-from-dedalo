@@ -19,7 +19,7 @@ public class grab : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void OnTriggerStay(Collider other){
+    private void OnTriggerEnter(Collider other){
         if(other.gameObject.CompareTag("grabObject")){
             Debug.Log("jaja");
             if(Input.GetKey("e") && pickedObject==null){
