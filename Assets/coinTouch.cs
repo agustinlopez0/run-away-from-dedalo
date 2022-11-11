@@ -18,6 +18,11 @@ public class coinTouch : MonoBehaviour
         if((refScript.gameData.valor&(1<<getIndex()))!=0){
             Destroy(gameObject);
         }
+
+        // Rotacion
+        transform.Rotate(0, 1.5f, 0);
+
+
     }
 
     void OnTriggerEnter(Collider collider){
