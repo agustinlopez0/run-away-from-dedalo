@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class passLevel : MonoBehaviour
 {
+    public string scene;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class passLevel : MonoBehaviour
 
     void OnTriggerEnter (Collider collider){
         if(collider.gameObject.tag == "Player"){
-            SceneManager.LoadScene("nivel_2");
+            SceneManager.LoadScene(scene);
         }
     }
 }
