@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class endLevel : MonoBehaviour
 {
+    public int maxScore = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,7 @@ public class endLevel : MonoBehaviour
         GameObject lgComponent = GameObject.Find("LoadGame");
         GameDataManager refScript = lgComponent.GetComponent<GameDataManager>();
         Debug.Log(refScript.gameData.valor);
-        if(refScript.gameData.valor==5){
+        if(refScript.gameData.valor == maxScore){
             gameObject.GetComponent<Renderer>().enabled = false;
             gameObject.transform.parent.GetComponent<Collider>().enabled=false;
 
