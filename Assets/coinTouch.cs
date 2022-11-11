@@ -5,6 +5,7 @@ using UnityEngine;
 public class coinTouch : MonoBehaviour
 {
     public GameObject light;
+    public float rotationVel = 1.5f;
 
     private int getIndex(){
         string str = gameObject.transform.parent.name;
@@ -20,7 +21,7 @@ public class coinTouch : MonoBehaviour
         }
 
         // Rotacion
-        transform.Rotate(0, 1.5f, 0);
+        transform.Rotate(0, rotationVel, 0);
 
 
     }
@@ -32,8 +33,8 @@ public class coinTouch : MonoBehaviour
             //increases score
             GameObject lgComponent = GameObject.Find("LoadGame");
             GameDataManager refScript = lgComponent.GetComponent<GameDataManager>();
-            //refScript.gameData.valor++;
-            refScript.gameData.valor|=(1<<getIndex()); //new coin to be added
+            refScript.gameData.valor++;
+            // refScript.gameData.valor|=(1<<getIndex()); //new coin to be added
 
             Debug.Log(refScript.gameData.valor);
 
